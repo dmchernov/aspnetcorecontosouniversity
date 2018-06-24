@@ -16,7 +16,7 @@ namespace ContosoUniversity.Models
 		public string FirstMidName { get; set; }
 
 		[DisplayName("Дата зачисления")]
-		[DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
+		//[DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
 		public DateTime EnrollmentDate { get; set; }
 
 		public ICollection<Enrollment> Enrollments { get; set; }
