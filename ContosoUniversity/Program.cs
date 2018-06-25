@@ -2,6 +2,7 @@
 using ContosoUniversity.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -19,6 +20,7 @@ namespace ContosoUniversity
 				try
 				{
 					var context = services.GetRequiredService<SchoolContext>();
+					context.Database.Migrate();
 					DbInitializer.Initialize(context);
 				}
 				catch (Exception ex)
