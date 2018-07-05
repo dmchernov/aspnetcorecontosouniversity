@@ -1,10 +1,10 @@
-﻿using ContosoUniversity.Data;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ContosoUniversity.Controllers
 {
